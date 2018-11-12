@@ -1,7 +1,9 @@
 # learn_react_js
 
-react js is a javascript framework to built user interfaces
+# react js is a javascript framework to built user interfaces
 
-XJS - is a syntax extension for Javascript, written to be used with react
+# XJS - is a syntax extension for Javascript, written to be used with react
 
-syntax looks very similar to HTML
+# syntax looks very similar to HTML
+
+
