@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from './logo.svg';
-import App from './App';
+// import logo from './logo.svg';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 // const variable is JSX syntax used to define react elements
@@ -49,8 +49,28 @@ import * as serviceWorker from './serviceWorker';
 
 // import an image
 
-const element = <img src={logo} alt='test'></img>;
+// const element = <img src={logo} alt='test'></img>;
 
-ReactDOM.render(element, document.getElementById('root'));
+
+// example with children
+
+// const element =
+//   <div>
+//     <p>Para 1</p>
+//     <p>Para 2</p>
+//     <p>Para 3</p>
+//   </div>
+// ;
+
+// react create elements
+
+// updating rendered elements
+
+function tick() {
+  const element = <h2>Hello {new Date().toLocaleTimeString() }</h2> ;
+  ReactDOM.render(element, document.getElementById('root'));
+}
+tick();
+setInterval(tick, 1);
 
 serviceWorker.register();
