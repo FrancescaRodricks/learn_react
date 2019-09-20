@@ -1,5 +1,7 @@
-// import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import logo from './logo.svg';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 // const variable is JSX syntax used to define react elements
@@ -31,19 +33,23 @@ import * as serviceWorker from './serviceWorker';
 
 // jsx is an expression too
 
-const user = {
-  FirstName: 'John',
-  LastName: 'Doe'
-};
+// const user = {
+//   FirstName: 'John',
+//   LastName: 'Doe'
+// };
 
-function getGreeting(user){
-  if(user)
-    return 'Hello' + user.FirstName + ' ' + user.LastName
-  else
-    return 'Hello Stranger'
-}
+// function getGreeting(user){
+//   if(user)
+//     return 'Hello' + user.FirstName + ' ' + user.LastName
+//   else
+//     return 'Hello Stranger'
+// }
 
-const element = getGreeting(user);
+// const element = getGreeting(user);
+
+// import an image
+
+const element = <img src={logo} alt='test'></img>;
 
 ReactDOM.render(element, document.getElementById('root'));
 
